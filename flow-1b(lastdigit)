@@ -1,0 +1,22 @@
+import java.util.*;
+class lastdigit
+{
+    public static void main(String[] args)
+    {
+        int n,m,a,b;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter value of m and n:");
+        m=sc.nextInt();
+        n=sc.nextInt();
+        a=m%10;
+        b=n%10;
+        if(a==b)
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
+    }
+}
