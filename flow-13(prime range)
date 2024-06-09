@@ -1,0 +1,30 @@
+import java.util.*;
+class primerange
+{
+    public static void main(String[]args)
+    {
+        int i,j,m,n,count;
+        String prime=" ";
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of lower m:");
+        m=sc.nextInt();
+        System.out.println("enter the value of Upper n:");
+        n=sc.nextInt();
+        for(i=m;i<=n;i++)
+        {
+            count=0;
+            for(j=2;j<=i;j++)
+            {
+                if(i%j==0)
+                {
+                    count++;
+                }
+            }
+            if(count<=1)
+            {
+                prime=prime+i+" ";
+            }
+        }
+        System.out.println("prime number are"+prime);
+    }
+}
